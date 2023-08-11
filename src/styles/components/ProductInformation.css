@@ -1,0 +1,344 @@
+section {
+  margin: 0 0 0 80px;
+}
+
+.register-container {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.1);
+  height: 132px;
+}
+
+.user-data--container {
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 6px 10px 5px rgba(0, 0, 0, 0.1);
+  height: 69vh;
+}
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 7px;
+}
+.form-group select {
+  border-radius: 22px;
+}
+
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 150px;
+  height: 26px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 10px;
+}
+
+.form-group label {
+  position: absolute;
+  top: -11px;
+  left: 5px;
+  color: grey;
+  font-size: 10px;
+}
+
+.data-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 200px;
+}
+
+.data-information div {
+  margin: 10px 10px 0 0;
+}
+
+.residence-information {
+  display: flex;
+  flex-flow: column;
+  align-self: end;
+}
+
+.residence-information--container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.residence-information input {
+  width: 240px !important;
+  margin-right: 10px;
+  height: 32px !important;
+}
+
+.postal-code {
+  margin-top: 10px;
+}
+
+.payment-information input {
+  height: 26px !important;
+}
+
+.payment-information {
+  align-self: end;
+}
+
+.payment-information--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.payment-information--container input {
+  width: 160px !important;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  padding: 5px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.button-category {
+  width: 136px;
+  height: 36px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 11px;
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+.fa-chevron-down {
+  display: inline-block;
+  position: absolute;
+  font-size: 12px;
+  top: -3%;
+  right: 6%;
+}
+
+.products-category {
+  display: grid;
+  position: absolute;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 68px;
+  top: 38px;
+  right: 40px;
+  box-shadow: 1px 1px 10px grey;
+}
+
+.products-category button {
+  font-size: 11px;
+  background-color: #fff;
+}
+
+.products-category button:hover {
+  color: white;
+  background-color: grey;
+}
+
+.minus {
+  padding: 10px;
+}
+
+.amount {
+  display: block;
+  position: absolute;
+  right: 4%;
+  top: 9%;
+  font-size: 10px;
+}
+
+.amount button {
+  font-size: 13px;
+  margin: 0 25px;
+  cursor: pointer;
+}
+.plus {
+  padding: 10px;
+}
+.amount-label {
+  left: 58px !important;
+}
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 1250px) {
+  .form-container {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+  }
+  .amount {
+    display: inline;
+    position: absolute;
+    left: 25%;
+    top: 17%;
+    font-size: 10px;
+  }
+
+  .amount button {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 950px) {
+  .form-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .amount {
+    display: inline;
+    position: absolute;
+    left: 53%;
+    top: 17%;
+    font-size: 10px;
+  }
+
+  input[type="submit"] {
+    bottom: 10%;
+    left: 15%;
+  }
+
+  .payment-information--container select {
+    width: 160px !important;
+  }
+}
+
+@media (max-width: 780px) {
+  body {
+    font-size: 10px;
+  }
+  .form-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .amount {
+    display: inline;
+    position: absolute;
+    left: 68%;
+    top: 22%;
+    font-size: 10px;
+  }
+
+  .residence-information input {
+    width: 170px !important;
+    margin-right: 10px;
+    height: 26px !important;
+  }
+  .payment-information--container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .payment-information--container input {
+    width: 177px !important;
+  }
+
+  .user-data--container {
+    height: 69vh;
+  }
+  .register-container {
+    height: 24vh;
+  }
+
+  .amount button {
+    font-size: 5px;
+  }
+
+  .amount-label {
+    left: 55px !important;
+    top: -5px !important;
+  }
+
+  .form-group select,
+  .form-group input[type="text"],
+  .form-group input[type="email"] {
+    width: 122px;
+    height: 23px;
+  }
+
+  .payment-information--container input {
+    width: 147px !important;
+  }
+
+  .residence-information input {
+    width: 142px !important;
+  }
+
+  .payment-information--container select {
+    width: 147px !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .form-container {
+    width: 350px;
+  }
+
+  .form-group select,
+  .form-group input[type="text"],
+  .form-group input[type="email"] {
+    width: 122px;
+    height: 23px;
+  }
+
+  .payment-information--container input {
+    width: 147px !important;
+  }
+
+  .residence-information input {
+    width: 142px !important;
+  }
+
+  .amount {
+    left: 75%;
+    top: 22%;
+    font-size: 9px;
+  }
+
+  .amount button {
+    margin: 0px 11px;
+  }
+
+  .amount-label {
+    top: -13px !important;
+    left: 25px !important;
+  }
+
+  input[type="submit"] {
+    bottom: 5%;
+    left: 20%;
+  }
+}
