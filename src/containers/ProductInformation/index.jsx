@@ -42,7 +42,7 @@ const ProductInformation = () => {
             <div className="form-group">
               <select
                 onChange={() => {
-                  getParentID(event);
+                  getParentID();
                   setTag(true);
                   setSingleProduct([]);
                 }}
@@ -58,7 +58,7 @@ const ProductInformation = () => {
             <div className="form-group">
               <select
                 onChange={() => {
-                  getSubcategoryID(event);
+                  getSubcategoryID();
                   setTag(true);
                   setSingleProduct([]);
                 }}
@@ -74,7 +74,7 @@ const ProductInformation = () => {
             <div className="form-group">
               <select
                 onChange={() => {
-                  getSubcategoryID(event);
+                  getSubcategoryID();
                   setTag(false);
                 }}
                 name="product"
