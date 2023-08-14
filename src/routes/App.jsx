@@ -11,7 +11,6 @@ const App = () => {
     <HashRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Productsbar />}></Route>
         <Route
           path="/register-purchase"
           element={<ProductInformation />}

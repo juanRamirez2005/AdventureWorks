@@ -1,69 +1,115 @@
-.logo {
-  text-align: center;
+/* color: #1f3051; */
+.nav-container {
   display: flex;
-  transition: all 0.5s ease;
+  background-color: #fff;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
 }
 
-.logo img {
-  background-color: #d4caca;
+.logo {
+  width: 50px;
   border-radius: 50%;
-  width: 77px;
-  height: 78px;
+  background-color: #cdcdcd;
 }
 
-.fa-solid {
+.nav-container ul {
+  display: flex;
+  justify-content: end;
+}
+
+.nav-container ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+.nav-container ul li a {
   color: #1f3051;
-  position: relative;
-  width: 70px;
-  height: 40px;
-  top: 14px;
-  text-align: center;
-  margin: 20px 0;
-  font-size: 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 7px 13px;
 }
 
-.nav-item {
-  position: relative;
-  top: 12px;
+.nav-container ul li span {
   margin-left: 10px;
 }
 
-.navbar {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  background: #fff;
-  width: 78px;
-  overflow: hidden;
-  transition: width 0.2s linear;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+.links-container {
+  width: 100%;
+}
+.fa-solid {
+  color: #1f3051;
 }
 
-.nav-container {
-  display: flex;
-  flex-direction: column;
+.nav-container a.active,
+a:hover {
+  background-color: #a3a3af;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
-.icon {
-  position: relative;
-  color: rgb(85, 83, 83);
-  font-size: 14px;
-  display: table;
-  width: 300px;
-  padding: 4px;
+.menu-hamburguer {
+  display: none;
 }
 
-.icon:hover {
-  background: #eee;
+.checkbtn {
+  font-size: 30px;
 }
 
-.navbar:hover {
-  width: 150px;
+#check {
+  display: none;
 }
 
-.logout {
-  position: absolute;
-  bottom: 0;
+@media (max-width: 700px) {
+  .nav-container {
+    width: 102%;
+  }
+
+  .nav-container ul {
+    flex-direction: column;
+  }
+  .links-container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: grey;
+    top: 58px;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-hamburguer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .menu-hamburguer i {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+
+  .nav-container a.active {
+    background: none;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .nav-container a:hover {
+    background: none;
+    color: white;
+    transition: 0.3s;
+  }
+  #check:checked ~ .links-container {
+    display: none;
+  }
 }

@@ -109,17 +109,17 @@ const UserInformation = () => {
               />
               <label>City</label>
             </div>
-          </div>
-          <div className="form-group postal-code">
-            <input
-              type="text"
-              id="state"
-              name="state"
-              placeholder="Postal Code"
-              autoComplete="postal-code"
-              required
-            />
-            <label>Postal Code</label>
+            <div className="form-group postal-code">
+              <input
+                type="text"
+                id="state"
+                name="state"
+                placeholder="Postal Code"
+                autoComplete="postal-code"
+                required
+              />
+              <label>Postal Code</label>
+            </div>
           </div>
         </div>
         <div className="payment-information">
@@ -169,8 +169,8 @@ const UserInformation = () => {
               <label>Expiration Date</label>
             </div>
           </div>
-          <input type="submit" />
         </div>
+        <input type="submit" />
       </div>
     </div>
   );

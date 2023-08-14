@@ -3,7 +3,7 @@ import { Clothes } from "../../components/Clothes/index.jsx";
 import "../../styles/components/list.css";
 const ListOfClothes = () => {
   return (
-    <ul>
+    <ul className="listOfProducts">
       {[1, 2, 3, 4].map((chain) => (
         <li key={chain}>
           <Clothes />

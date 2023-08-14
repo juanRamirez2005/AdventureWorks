@@ -1,11 +1,11 @@
 section {
-  margin: 0 0 0 80px;
+  margin-left: 4px;
 }
 
 .register-container {
   margin: 0 auto;
   background-color: #fff;
-  padding: 10px;
+  padding: 4px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.1);
@@ -16,11 +16,11 @@ section {
   display: flex;
   flex-flow: column;
   background-color: #fff;
-  padding: 20px;
+  padding: 4px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 6px 10px 5px rgba(0, 0, 0, 0.1);
-  height: 69vh;
+  height: 60vh;
 }
 .form-group {
   position: relative;
@@ -36,7 +36,7 @@ section {
 .form-container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  margin-top: 7px;
+  margin-top: 11px;
 }
 .form-group select {
   border-radius: 22px;
@@ -74,7 +74,6 @@ section {
 .residence-information {
   display: flex;
   flex-flow: column;
-  align-self: end;
 }
 
 .residence-information--container {
@@ -84,44 +83,25 @@ section {
 }
 
 .residence-information input {
-  width: 240px !important;
   margin-right: 10px;
-  height: 32px !important;
-}
-
-.postal-code {
-  margin-top: 10px;
-}
-
-.payment-information input {
-  height: 26px !important;
-}
-
-.payment-information {
-  align-self: end;
 }
 
 .payment-information--container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 10px;
   gap: 10px;
 }
 
-.payment-information--container input {
-  width: 160px !important;
-}
-
 input[type="submit"] {
   background-color: #4caf50;
-  padding: 5px;
+  padding: 8px;
   color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 15px;
   cursor: pointer;
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
+  margin-top: 14px;
+  align-self: start;
 }
 
 input[type="submit"]:hover {
@@ -173,14 +153,11 @@ input[type="submit"]:hover {
 
 .amount {
   display: block;
-  position: absolute;
-  right: 4%;
-  top: 9%;
   font-size: 10px;
 }
 
 .amount button {
-  font-size: 13px;
+  font-size: 9px;
   margin: 0 25px;
   cursor: pointer;
 }
@@ -199,13 +176,6 @@ input[type="submit"]:hover {
     grid-template-columns: repeat(5, 1fr);
     gap: 18px;
   }
-  .amount {
-    display: inline;
-    position: absolute;
-    left: 25%;
-    top: 17%;
-    font-size: 10px;
-  }
 
   .amount button {
     font-size: 9px;
@@ -218,14 +188,6 @@ input[type="submit"]:hover {
     gap: 18px;
   }
 
-  .amount {
-    display: inline;
-    position: absolute;
-    left: 53%;
-    top: 17%;
-    font-size: 10px;
-  }
-
   input[type="submit"] {
     bottom: 10%;
     left: 15%;
@@ -236,38 +198,32 @@ input[type="submit"]:hover {
   }
 }
 
-@media (max-width: 780px) {
-  body {
-    font-size: 10px;
+@media (max-height: 666px) {
+  .payment-information--container {
+    grid-template-columns: repeat(4, 1fr);
   }
-  .form-container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-  }
+}
 
-  .amount {
-    display: inline;
-    position: absolute;
-    left: 68%;
-    top: 22%;
+@media (max-height: 662px) {
+  .form-group select,
+  .form-group input[type="text"],
+  .form-group input[type="email"] {
+    width: 122px;
+    height: 23px;
+  }
+}
+@media (max-width: 802px) {
+  body {
     font-size: 10px;
   }
 
   .residence-information input {
-    width: 170px !important;
+    width: 110px !important;
     margin-right: 10px;
-    height: 26px !important;
-  }
-  .payment-information--container {
-    grid-template-columns: 1fr 1fr;
   }
 
   .payment-information--container input {
-    width: 177px !important;
-  }
-
-  .user-data--container {
-    height: 69vh;
+    width: 105px !important;
   }
   .register-container {
     height: 24vh;
@@ -285,49 +241,16 @@ input[type="submit"]:hover {
   .form-group select,
   .form-group input[type="text"],
   .form-group input[type="email"] {
-    width: 122px;
-    height: 23px;
+    width: 95px;
   }
 
   .payment-information--container input {
-    width: 147px !important;
-  }
-
-  .residence-information input {
-    width: 142px !important;
+    width: 105px !important;
   }
 
   .payment-information--container select {
-    width: 147px !important;
+    width: 137px !important;
   }
-}
-
-@media (max-width: 580px) {
-  .form-container {
-    width: 350px;
-  }
-
-  .form-group select,
-  .form-group input[type="text"],
-  .form-group input[type="email"] {
-    width: 122px;
-    height: 23px;
-  }
-
-  .payment-information--container input {
-    width: 147px !important;
-  }
-
-  .residence-information input {
-    width: 142px !important;
-  }
-
-  .amount {
-    left: 75%;
-    top: 22%;
-    font-size: 9px;
-  }
-
   .amount button {
     margin: 0px 11px;
   }
@@ -336,9 +259,23 @@ input[type="submit"]:hover {
     top: -13px !important;
     left: 25px !important;
   }
+}
 
-  input[type="submit"] {
-    bottom: 5%;
-    left: 20%;
+@media (max-width: 700px) {
+  .form-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .payment-information--container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .payment-information--container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
