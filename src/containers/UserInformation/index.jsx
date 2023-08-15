@@ -123,7 +123,7 @@ const UserInformation = () => {
           </div>
         </div>
         <div className="payment-information">
-          <h1>Residence Information</h1>
+          <h1>Payment Information</h1>
           <div className="payment-information--container">
             <div className="form-group">
               <select name="payment" id="">

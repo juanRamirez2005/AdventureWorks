@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/components/list.css";
 import { Accesories } from "../../components/Accesories";
 const ListOfAccesories = () => {
   return (

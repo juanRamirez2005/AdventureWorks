@@ -1,8 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
 import { Bikes } from "../../components/Bikes";
 
-import "../../styles/components/list.css";
 const ListOfBikes = () => {
   return (
     <div>

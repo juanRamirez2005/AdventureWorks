@@ -1,6 +1,5 @@
 import React from "react";
 import { Clothes } from "../../components/Clothes/index.jsx";
-import "../../styles/components/list.css";
 const ListOfClothes = () => {
   return (
     <ul className="listOfProducts">
