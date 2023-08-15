@@ -26,13 +26,13 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/#/register-purchase">
+            <a href="/register-purchase">
               <i className="fa-solid fa-cart-shopping"></i>
               <span>Purchase</span>
             </a>
           </li>
           <li>
-            <a href="/#/sign-in">
+            <a href="/sign-in">
               <i className="fa-solid fa-right-to-bracket"></i>
               <span>Sign In</span>
             </a>

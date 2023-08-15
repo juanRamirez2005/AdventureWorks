@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "../components/Navbar";
 import "../styles/components/main.css";
 import { Productsbar } from "../components/Productsbar";
@@ -8,7 +8,7 @@ import { LogInInterface } from "../containers/LogInInterface";
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route
@@ -17,7 +17,7 @@ const App = () => {
         ></Route>
         <Route path="/sign-in" element={<LogInInterface />}></Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
