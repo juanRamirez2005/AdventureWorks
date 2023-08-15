@@ -87,7 +87,7 @@ section {
 }
 
 .payment-information--container {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 10px;
   gap: 10px;
