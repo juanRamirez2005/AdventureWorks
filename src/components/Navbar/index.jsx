@@ -14,25 +14,25 @@ const Navbar = () => {
       <div className="links-container">
         <ul>
           <li>
-            <a className="active" href="">
+            <a className="active" href="/">
               <i className="fa-solid fa-house"></i>
               <span>Home</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="/">
               <i className="fa-solid fa-user"></i>
               <span>Profile</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="/#/register-purchase">
               <i className="fa-solid fa-cart-shopping"></i>
               <span>Purchase</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="/#/sign-in">
               <i className="fa-solid fa-right-to-bracket"></i>
               <span>Sign In</span>
             </a>
