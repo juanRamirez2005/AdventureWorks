@@ -4,47 +4,42 @@ import "../../styles/components/Navbar.css";
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className="navbar">
-        <ul className="nav-container">
+    <nav className="nav-container">
+      <img className="logo" src={Cyclist} alt="Logo" />
+      <input type="checkbox" id="check" />
+      <label htmlFor="check" className="menu-hamburguer">
+        <i className="fas fa-bars"></i>
+      </label>
+
+      <div className="links-container">
+        <ul>
           <li>
-            <a href="/" className="logo">
-              <img src={Cyclist} alt="logo" />
-            </a>
-          </li>
-          <li>
-            <a href="/" className="icon">
+            <a className="active" href="">
               <i className="fa-solid fa-house"></i>
-              <span className="nav-item">Home</span>
+              <span>Home</span>
             </a>
           </li>
           <li>
-            <a href="/" className="icon">
+            <a href="">
               <i className="fa-solid fa-user"></i>
-              <span className="nav-item">Profile</span>
+              <span>Profile</span>
             </a>
           </li>
           <li>
-            <a href="" className="icon">
-              <i className="fa-solid fa-wallet"></i>
-              <span className="nav-item">Wallet</span>
-            </a>
-          </li>
-          <li>
-            <a href="/#/register-purchase" className="icon">
+            <a href="">
               <i className="fa-solid fa-cart-shopping"></i>
-              <span className="nav-item">Purchase</span>
+              <span>Purchase</span>
             </a>
           </li>
           <li>
-            <a href="/#/sign-in" className="icon logout">
+            <a href="">
               <i className="fa-solid fa-right-to-bracket"></i>
-              <span className="nav-item">Sign in</span>
+              <span>Sign In</span>
             </a>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 
